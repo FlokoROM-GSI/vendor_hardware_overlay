@@ -2,6 +2,10 @@ PRODUCT_PACKAGES += \
 	HardwareOverlayPicker \
 	QtiAudio \
 	TrebleApp \
+	MobileFeliCaClient \
+	MobileFeliCaMenuMainApp \
+	MobileFeliCaSettingApp \
+	MobileFeliCaWebPluginBoot \
 	treble-overlay-NavBar \
 	treble-overlay-NightMode \
 	treble-overlay-SystemUI-FalseLocks \
