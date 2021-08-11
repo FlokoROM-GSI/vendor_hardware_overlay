@@ -126,6 +126,7 @@ PRODUCT_PACKAGES += \
 	treble-overlay-sony-XZ3 \
 	treble-overlay-sprd-ims \
 	treble-overlay-teclast-m30 \
+	treble-overlay-teclast-t30 \
 	treble-overlay-tecno-camon11 \
 	treble-overlay-telephony-caf-ims \
 	treble-overlay-telephony-mtk-ims \
@@ -140,6 +141,7 @@ PRODUCT_PACKAGES += \
 	treble-overlay-vsmart-live \
 	treble-overlay-webview \
 	treble-overlay-wifi5g \
+	treble-overlay-xiaomi-mi11lite5g \
 	treble-overlay-xiaomi-mi6x \
 	treble-overlay-xiaomi-mi8 \
 	treble-overlay-xiaomi-mi8ee \
@@ -158,6 +160,7 @@ PRODUCT_PACKAGES += \
 	treble-overlay-xiaomi-mipad4 \
 	treble-overlay-xiaomi-miplay \
 	treble-overlay-xiaomi-pocof1 \
+	treble-overlay-xiaomi-redmi10x5g \
 	treble-overlay-xiaomi-redmi6 \
 	treble-overlay-xiaomi-redmi6a \
 	treble-overlay-xiaomi-redmi6pro \
