@@ -28,6 +28,9 @@
     <!-- Whether the device supports Smart Pixels -->
     <bool name="config_enableSmartPixels">true</bool>
 
+    <!-- Whether to show settings for hiding notch fill -->
+    <bool name="config_showHideNotchSettings">true</bool>
+
     <!-- Indicate whether closing the lid causes the device to go to sleep and opening
          it causes the device to wake up.
          The default is false. -->
