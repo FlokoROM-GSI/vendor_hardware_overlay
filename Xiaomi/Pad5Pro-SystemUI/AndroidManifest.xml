@@ -1,11 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        package="me.phh.treble.overlay.xiaomi.mix4"
+        package="me.phh.treble.overlay.xiaomi.pad5pro.systemui"
         android:versionCode="1"
         android:versionName="1.0">
         <application android:extractNativeLibs="false"/>
-        <overlay android:targetPackage="android"
+        <overlay android:targetPackage="com.android.systemui"
                 android:requiredSystemPropertyName="ro.vendor.build.fingerprint"
-                android:requiredSystemPropertyValue="+*iaomi/odin*"
-		android:priority="512"
+                android:requiredSystemPropertyValue="+*iaomi/elish*"
+		android:priority="916"
 		android:isStatic="true" />
 </manifest>

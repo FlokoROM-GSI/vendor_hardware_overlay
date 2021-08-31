@@ -164,6 +164,9 @@ PRODUCT_PACKAGES += \
 	treble-overlay-xiaomi-mix4 \
 	treble-overlay-xiaomi-mix4-settings \
 	treble-overlay-xiaomi-mix4-systemui \
+	treble-overlay-xiaomi-pad5pro \
+	treble-overlay-xiaomi-pad5pro-settings \
+	treble-overlay-xiaomi-pad5pro-systemui \
 	treble-overlay-xiaomi-pocof1 \
 	treble-overlay-xiaomi-redmi10x5g \
 	treble-overlay-xiaomi-redmi6 \
