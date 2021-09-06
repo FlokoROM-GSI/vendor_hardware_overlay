@@ -110,6 +110,20 @@
         <item>10</item>
     </integer-array>
 
+    <integer-array name="config_defaultNotificationVibePattern">
+        <item>0</item>
+        <item>180</item>
+        <item>80</item>
+        <item>180</item>
+    </integer-array>
+
+    <integer-array name="config_notificationFallbackVibePattern">
+        <item>0</item>
+        <item>100</item>
+        <item>150</item>
+        <item>100</item>
+    </integer-array>
+
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->
     <integer name="config_screenBrightnessSettingMinimum">2</integer>
