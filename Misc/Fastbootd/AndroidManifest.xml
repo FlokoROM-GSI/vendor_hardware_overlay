@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="me.phh.treble.overlay.misc.fastbootd"
+        android:versionCode="1"
+        android:versionName="1.0">
+		<application android:extractNativeLibs="false"/>
+        <overlay android:targetPackage="lineageos.platform"
+			android:requiredSystemPropertyName="ro.boot.dynamic_partitions"
+			android:requiredSystemPropertyValue="true"
+			android:priority="951"
+			android:isStatic="true" />
+</manifest>
