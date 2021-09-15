@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="me.phh.treble.overlay.misc.snapcamera"
+        android:versionCode="1"
+        android:versionName="1.0">
+		<application android:extractNativeLibs="false"/>
+        <overlay android:targetPackage="org.codeaurora.snapcam"
+			android:requiredSystemPropertyName="camera.disable_zsl_mode"
+			android:requiredSystemPropertyValue="true"
+			android:priority="950"
+			android:isStatic="true" />
+</manifest>
