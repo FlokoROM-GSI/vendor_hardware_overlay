@@ -67,6 +67,7 @@ PRODUCT_PACKAGES += \
 	treble-overlay-misc-aod-systemui \
 	treble-overlay-misc-dt2w \
 	treble-overlay-misc-fastbootd \
+	treble-overlay-misc-fingerprint-press \
 	treble-overlay-misc-minimal-brightness \
 	treble-overlay-misc-snapcamera \
 	treble-overlay-moto-e5 \
