@@ -17,18 +17,6 @@
 */
 -->
 <resources>
-<<<<<<< HEAD
-    <string name="config_ims_package">org.codeaurora.ims</string>
-	<bool name="config_dynamic_bind_ims">true</bool>
-    <bool name="config_carrier_volte_available">true</bool>
-    <bool name="config_device_volte_available">true</bool>
-    <bool name="config_device_wfc_ims_available">true</bool>
-    <bool name="skip_restoring_network_selection">true</bool>
-    <bool name="config_camera_sound_forced">false</bool>
-
-    <!-- Whether the device supports Smart Pixels -->
-    <bool name="config_enableSmartPixels">true</bool>
-=======
      <!-- The bounding path of the cutout region of the main built-in display.
          Must either be empty if there is no cutout region, or a string that is parsable by
          {@link android.util.PathParser}.
@@ -142,43 +130,10 @@
 
     <!-- Is the device capable of hot swapping an ICC Card -->
     <bool name="config_hotswapCapable">true</bool>
->>>>>>> eb15827721bce54f0dc136b0cb7841f5c0930dbc
 
     <!-- If true, the display will be shifted around in ambient mode. -->
     <bool name="config_enableBurnInProtection">true</bool>
 
-<<<<<<< HEAD
-    <!-- Specifies the maximum burn-in offset displacement from the center. If -1, no maximum value
-         will be used. -->
-    <integer name="config_burnInProtectionMaxRadius">70</integer>
-
-    <!-- Specifies the minimum burn-in offset horizontally. -->
-    <integer name="config_burnInProtectionMinHorizontalOffset">-15</integer>
-
-    <!-- Specifies the maximum burn-in offset horizontally. -->
-    <integer name="config_burnInProtectionMaxHorizontalOffset">15</integer>
-
-    <!-- Specifies the minimum burn-in offset vertically. -->
-    <integer name="config_burnInProtectionMinVerticalOffset">-40</integer>
-
-    <!-- Specifies the maximum burn-in offset vertically. -->
-    <integer name="config_burnInProtectionMaxVerticalOffset">40</integer>
-
-    <!-- Whether to show settings for hiding notch fill -->
-    <bool name="config_showHideNotchSettings">true</bool>
-
-    <!-- Indicate whether closing the lid causes the device to go to sleep and opening
-         it causes the device to wake up.
-         The default is false. -->
-    <bool name="config_lidControlsSleep">true</bool>
-
-    <!-- Indicate whether to allow the device to suspend when the screen is off
-         due to the proximity sensor.  This resource should only be set to true
-         if the sensor HAL correctly handles the proximity sensor as a wake-up source.
-         Otherwise, the device may fail to wake out of suspend reliably.
-         The default is false. -->
-    <bool name="config_suspendWhenScreenOffDueToProximity">true</bool>
-=======
     <!-- When true use the linux /dev/input/event subsystem to detect the switch changes
          on the headphone/microphone jack. When false use the older uevent framework. -->
     <bool name="config_useDevInputEventForAudioJack">true</bool>
@@ -206,7 +161,6 @@
 
     <!-- Should the pinner service pin the Home application? -->
     <bool name="config_pinnerHomeApp">true</bool>
->>>>>>> eb15827721bce54f0dc136b0cb7841f5c0930dbc
 
     <!-- The default peak refresh rate for a given device. Change this value if you want to prevent
         the framework from using higher refresh rates, even if display modes with higher refresh
@@ -214,142 +168,6 @@
         non-zero. -->
     <integer name="config_defaultPeakRefreshRate">90</integer>
 
-<<<<<<< HEAD
-    <!-- Radius of the software rounded corners. -->
-    <dimen name="rounded_corner_radius">103px</dimen>
-
-    <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
-         in hardware. -->
-    <bool name="config_setColorTransformAccelerated">true</bool>
-
-    <!-- Power Management: Specifies whether to decouple the auto-suspend state of the
-         device from the display on/off state.
-         When false, autosuspend_disable() will be called before the display is turned on
-         and autosuspend_enable() will be called after the display is turned off.
-         This mode provides best compatibility for devices using legacy power management
-         features such as early suspend / late resume.
-         When true, autosuspend_display() and autosuspend_enable() will be called
-         independently of whether the display is being turned on or off.  This mode
-         enables the power manager to suspend the application processor while the
-         display is on.
-         This resource should be set to "true" when a doze component has been specified
-         to maximize power savings but not all devices support it.
-         Refer to autosuspend.h for details.
-    -->
-    <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">true</bool>
-
-    <!-- Vibrator pattern for feedback about a long screen/key press -->
-    <integer-array name="config_longPressVibePattern">
-        <item>0</item>
-        <item>12</item>
-        <item>7</item>
-    </integer-array>
-
-    <!-- Vibrator pattern for feedback about touching a virtual key -->
-    <integer-array name="config_virtualKeyVibePattern">
-        <item>0</item>
-        <item>12</item>
-        <item>7</item>
-    </integer-array>
-
-    <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
-    <integer-array name="config_keyboardTapVibePattern">
-        <item>10</item>
-    </integer-array>
-
-    <integer-array name="config_defaultNotificationVibePattern">
-        <item>0</item>
-        <item>180</item>
-        <item>80</item>
-        <item>180</item>
-    </integer-array>
-
-    <integer-array name="config_notificationFallbackVibePattern">
-        <item>0</item>
-        <item>100</item>
-        <item>150</item>
-        <item>100</item>
-    </integer-array>
-
-    <!-- Flag indicating whether the surface flinger has limited
-         alpha compositing functionality in hardware.  If set, the window
-         manager will disable alpha trasformation in animations where not
-         strictly needed. -->
-    <bool name="config_sf_limitedAlpha">true</bool>
-
-    <!-- Enables or disables fading edges when marquee is enabled in TextView.
-         Off by default, since the framebuffer readback used to implement the
-         fading edges is prohibitively expensive on most GPUs. -->
-    <bool name="config_ui_enableFadingMarquee">true</bool>
-
-    <!-- Minimum screen brightness setting allowed by the power manager.
-         The user is forbidden from setting the brightness below this level. -->
-    <integer name="config_screenBrightnessSettingMinimum">2</integer>
-
-    <!-- Maximum screen brightness setting allowed by the power manager.
-         The user is forbidden from setting the brightness above this level. -->
-    <integer name="config_screenBrightnessSettingMaximum">255</integer>
-
-    <!-- Screen brightness used to dim the screen when the user activity
-         timeout expires.  May be less than the minimum allowed brightness setting
-         that can be set by the user. -->
-    <integer name="config_screenBrightnessDim">10</integer>
-
-    <!-- Screen brightness used to dim the screen while dozing in a very low power state.
-         May be less than the minimum allowed brightness setting
-         that can be set by the user. -->
-    <integer name="config_screenBrightnessDoze">17</integer>
-
-    <!-- Default screen brightness setting.
-         Must be in the range specified by minimum and maximum. -->
-    <integer name="config_screenBrightnessSettingDefault">102</integer>
-
-    <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
-         for debouncing the light sensor.  Different constants are used to debounce the light sensor
-         when adapting to brighter or darker environments.  This parameter controls how quickly
-         brightness changes occur in response to an observed change in light level that exceeds the
-         hysteresis threshold. -->
-    <integer name="config_autoBrightnessBrighteningLightDebounce">1000</integer>
-    <integer name="config_autoBrightnessDarkeningLightDebounce">1000</integer>
-
-     <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
-         The N entries of this array define N + 1 control points as follows:
-         (1-based arrays)
-         Point 1:            (0, value[1]):             lux <= 0
-         Point 2:     (level[1], value[2]):  0        < lux <= level[1]
-         Point 3:     (level[2], value[3]):  level[2] < lux <= level[3]
-         ...
-         Point N+1: (level[N], value[N+1]):  level[N] < lux
-         The control points must be strictly increasing.  Each control point
-         corresponds to an entry in the brightness backlight values arrays.
-         For example, if LUX == level[1] (first element of the levels array)
-         then the brightness will be determined by value[2] (second element
-         of the brightness values array).
-         Spline interpolation is used to determine the auto-brightness
-         backlight values for LUX levels between these control points.
-         Must be overridden in platform specific overlays -->
-    <integer-array name="config_autoBrightnessLevels">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>8</item>
-        <item>12</item>
-        <item>20</item>
-        <item>33</item>
-        <item>55</item>
-        <item>90</item>
-        <item>148</item>
-        <item>245</item>
-        <item>403</item>
-        <item>665</item>
-        <item>1097</item>
-        <item>1808</item>
-        <item>2981</item>
-        <item>5000</item>
-    </integer-array>
-
-=======
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware. -->
     <bool name="config_setColorTransformAccelerated">true</bool>
@@ -496,7 +314,6 @@
         <item>5000</item>
     </integer-array>
 
->>>>>>> eb15827721bce54f0dc136b0cb7841f5c0930dbc
     <!-- Array of desired screen brightness in nits corresponding to the lux values
          in the config_autoBrightnessLevels array. As with config_screenBrightnessMinimumNits and
          config_screenBrightnessMaximumNits, the display brightness is defined as the measured
@@ -1054,4 +871,6 @@
         <item>418.36</item>
         <item>420</item>
     </array>
+
+    <bool name="config_camera_sound_forced">false</bool>
 </resources>
